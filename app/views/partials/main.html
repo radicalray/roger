@@ -3,6 +3,17 @@
 <div ng-include="'partials/todo'"></div>
 
 <div class="header">
+  <h3 class="text-muted">Firebase real-time two-way synching</h3>
+</div>
+<span my-draggable class="alert alert-info drag-tooltip">
+  <span class="badge">{{position.x}}, {{position.y}}</span>
+  <h3><strong>Drag Me!</strong></h3>
+  <p>
+    Real-time Firebase position synching across all pages.
+  </p>
+</span>
+
+<div class="header">
   <h3 class="text-muted">Technology Stack</h3>
 </div>
 <div ng-repeat="thing in awesomeThings">

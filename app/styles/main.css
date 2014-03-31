@@ -95,6 +95,35 @@ body {
   border-radius: 4px;
 }
 
+.drag-container {
+  display:block; 
+  position:absolute;
+}
+
+.drag-tooltip {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  z-index: 5000;
+}
+
+.drag-tooltip h3 {
+  margin-top: 0px;
+}
+
+.drag-tooltip .badge {
+  margin-bottom: 10px;
+}
+
+.drag-tooltip h3 .label {
+  margin-bottom: 5px;
+}
+
 .todo-pane .panel-footer .btn {
   width: 163px;
 }
@@ -117,4 +146,8 @@ body {
   -webkit-user-select: none;
   -o-user-select: none;
   user-select: none;
+}
+
+.line-numbers .line-numbers-rows {
+  left: -5em;
 }

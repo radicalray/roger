@@ -7,7 +7,17 @@ Sample angular.js + node.js application
 
 * MongoDB - Download and Install [MongoDB](http://www.mongodb.org/downloads) - If you plan on scaffolding your project with mongoose, you'll need mongoDB to be installed.
 
+## Demo
+
+[Click Here](http://rogerangular.herokuapp.com/)
+
 ## Getting Started
+
+Install Dependencies
+
+```bash
+npm install && bower install
+```
 
 Launch your express server in development mode.
 ```bash
