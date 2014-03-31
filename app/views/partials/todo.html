@@ -7,7 +7,11 @@
     <div class="panel-body">
       <ul class="list-group">
         <li class="list-group-item unselectable todo-list-{{todo.done}}" ng-repeat="todo in todos | filter:search | orderBy:'text'" ng-click="todo.done = !todo.done; save(todo)">
-          <input type="checkbox" id="{{todo._id}}" ng-model="todo.done" ng-change="save(todo)"> <label class="done-{{todo.done}}">{{todo.text}}</label>
+          <span class="done-{{todo.done}}">
+            <span class="glyphicon glyphicon-unchecked" ng-show="!todo.done"> </span>
+            <span class="glyphicon glyphicon-check" ng-show="todo.done"> </span>
+            {{todo.text}}
+          </span>
         </li>
       </ul>
     </div>
